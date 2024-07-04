@@ -17,17 +17,21 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #091016; /* Example color code, use a color picker to get the exact shade */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.vocaixa-heading {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  color: black;
+  transition: all 0.3s;
+}
+
+.vocaixa-heading:hover {
+  -webkit-text-stroke-width: 4px; /* increase stroke width on hover */
 }
