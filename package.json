@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-polly": "^3.609.0",
     "aws-sdk": "^2.1654.0",
     "lucide-react": "^0.400.0",
     "next": "14.2.4",

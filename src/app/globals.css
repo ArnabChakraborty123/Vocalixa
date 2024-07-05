@@ -35,3 +35,9 @@ body {
 .vocaixa-heading:hover {
   -webkit-text-stroke-width: 4px; /* increase stroke width on hover */
 }
+
+.audio-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
