@@ -34,12 +34,7 @@ const Section = ({ text, setText, convertTexttoSpeech }) => {
         >
           Convert to speech
         </button>
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-4 mt-4 rounded-full flex items-center justify-center shadow-lg transition duration-300 ease-in-out transform hover:scale-110"
-          style={{ width: "50px", height: "50px" }}
-        >
-          <Download size={24} />
-        </button>
+        
       </div>
     </div>
   );
