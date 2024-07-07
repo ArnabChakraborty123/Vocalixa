@@ -35,24 +35,31 @@ const Dashboard = () => {
       setAudioFile(response);
     } catch (error) {
       console.error("Error converting text to speech:", error);
-    }finally {
+    } finally {
       setLoading(false);
     }
   };
 
   return (
     <div
-      className="h-screen w-screen bg-[url('/images/speakerimage.jpg')] bg-cover bg-center"
+      className="h-screen w-screen bg-[url('/images/speakerimage.jpg')] bg-cover bg-center overflow-hidden"
       style={{ paddingTop: 0, paddingBottom: 0 }}
     >
       <div>
         <Header />
       </div>
       <div className="mt-20 ml-20 mr-10 pl-10 pr-20 sm:mx-20">
-        <Section text={text} setText={setText} convertTexttoSpeech={convertTexttoSpeech} />
-        {speechConverted && <p>Text converted to speech successfully!</p>}
+        <Section
+          text={text}
+          setText={setText}
+          convertTexttoSpeech={convertTexttoSpeech}
+        />
+        {speechConverted}
       </div>
+      <div className="pt-9 mt-2">
+      <Audioplayer audioFile={audioFile} isTextEntered={text.length > 0} />
       {/* <Audioplayer audioFile={audioFile} isTextEntered={text.length > 0} /> */}
+      </div>
     </div>
   );
 };

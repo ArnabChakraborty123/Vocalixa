@@ -28,7 +28,7 @@ body {
 .vocaixa-heading {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
-  color: black;
+  color: rgb(24, 1, 17);
   transition: all 0.3s;
 }
 

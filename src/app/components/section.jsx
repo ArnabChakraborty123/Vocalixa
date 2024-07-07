@@ -28,7 +28,7 @@ const Section = ({ text, setText, convertTexttoSpeech }) => {
       ></textarea>
       <div className="flex mt-4 justify-center flex-wrap">
         <button
-          className="bg-gradient-to-r from-blue-500 to-blue-700 text-white font-bold py-2 px-4 rounded mt-4 flex transition-all duration-300 ease-in-out hover:shadow-xl mr-4"
+          className="bg-gradient-to-r from-purple-500 to-red-700 text-white font-bold py-2 px-4 rounded mt-4 flex transition-all duration-300 ease-in-out hover:shadow-xl mr-4"
           style={{ boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.3)" }}
           onClick={() => convertTexttoSpeech()}
         >
