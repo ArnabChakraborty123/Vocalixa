@@ -1,4 +1,3 @@
-
 # Vocalixa
 A text-to-speech converter using Amazon Polly
 
@@ -58,4 +57,6 @@ Vocalixa is a text-to-speech converter built using Next.js and Amazon Polly. The
 2. **Click the convert button** to generate the speech.
 3. **Listen** to the generated audio directly within the application.
 4.**Download** the audio directly in your pc
+<<<<<<< HEAD
 Feel free to adjust any part of this README as necessary!
+
