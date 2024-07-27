@@ -54,7 +54,12 @@ const Dashboard = () => {
           setText={setText}
           convertTexttoSpeech={convertTexttoSpeech}
         />
-        {speechConverted}
+        {speechConverted && (
+        <div>
+          {/* Render something when speechConverted is true */}
+          <p>Text converted to speech successfully!</p>
+        </div>
+      )}
       </div>
       <div className="pt-9 mt-2">
       <Audioplayer audioFile={audioFile} isTextEntered={text.length > 0} />
